@@ -7,6 +7,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 import { HomeComponent } from './components/home/home.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 // decorator,
 // function
@@ -14,7 +15,7 @@ import { HomeComponent } from './components/home/home.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,NavbarComponent,FooterComponent,UserComponent,ProductsComponent,
-    MoviesComponent,MovieDetailsComponent,HomeComponent
+    MoviesComponent,MovieDetailsComponent,HomeComponent, ProductDetailsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

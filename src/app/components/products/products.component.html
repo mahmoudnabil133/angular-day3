@@ -1,7 +1,7 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
-  @for (product of productList; track product.id) {
+  @for (product of allProducts; track product.id) {
   <div class="col">
-    <div class="card">
+    <div class="card" (click)="viewProductDetails(product.id)">
       <img [src]="product.image" class="card-img-top" />
       @if (product.price<20) {
       <div class="m-3 w-25 mx-auto">
@@ -34,7 +34,7 @@
     </div>
   </div>
   }@empty {
-  <h2>No products Founded!</h2>
+  <h2>No productsss Founded!</h2>
   }
 </div>
 
